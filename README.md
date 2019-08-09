@@ -2,8 +2,7 @@
 
 ## Run project
 
-´´´
+```
 npm start
-´´´
-
+```
 Made with ❤
