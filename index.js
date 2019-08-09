@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 //Import routes
-const authRoutes = require('./routes/auth');
+const authRoute = require('./routes/auth');
+const postRoute = require('./routes/posts');
 
 //Connection to DB
 mongoose.connect('mongodb://localhost/passport',
@@ -15,7 +16,8 @@ mongoose.connect('mongodb://localhost/passport',
 app.use(express.json());
 
 //Routes Middlewares
-app.use('/api/user', authRoutes);
+app.use('/api/user', authRoute);
+app.use('/api/posts', postRoute);
 
 app.listen(3000, () => {
 	console.log('Server on port 3000');
