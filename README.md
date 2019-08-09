@@ -17,4 +17,4 @@ npm start
 ### trying to access to posts route without JWT
 ![](https://github.com/ettorestark/auth-with-jwt/blob/master/assets/Post%20without%20token.jpg)
 
-Made with ❤
+Made with ❤ by Ettore Stark Rizzo
